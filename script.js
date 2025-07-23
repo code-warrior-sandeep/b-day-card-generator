@@ -4,7 +4,6 @@ const photoInput = document.getElementById('photo-input');
 const card = document.getElementById('card');
 const cardName = document.getElementById('card-name');
 const cardPhoto = document.getElementById('card-photo');
-const toggleButton = document.getElementById('toggle-button');
 const downloadButton = document.getElementById('download-button');
 
 // Generate Card
@@ -29,11 +28,6 @@ generateButton.addEventListener('click', () => {
     photoInput.value = '';
 });
 
-// Dark Mode Toggle
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Toggle Light Mode' : 'Toggle Dark Mode';
-});
 
 // Download the Card as Image
 downloadButton.addEventListener('click', () => {
